@@ -32,6 +32,11 @@
 }
 .header__logo {
 	max-width: 190px;
+	.logo_desc {
+	}
+	.logo_mob {
+		display: none;
+	}
 }
 .header_contacts {
 	display: flex;
@@ -99,7 +104,7 @@
 	color: #141414;
 	padding: 18px 0;
 	&:hover {
-		text-decoration: underline;
+		// text-decoration: underline;
 	}
 }
 .menu__arrow {
@@ -107,9 +112,11 @@
 }
 .menu__link-product {
 	background: #F2933C;
-	color: #fff;
 	padding: 17px 22px;
 	border-radius: 25px 0 0 25px;
+	a {
+		color: #fff;
+	}
 	.arrow__list {
 		margin-left: 34px;
 	}
@@ -136,11 +143,20 @@
 	transform: translate(0, 10px);
 	background-color: #fff;
 	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+	background: #F2933C;
 	.sub-menu__link:not(:last-child) {
 		margin-bottom: 20px;
 	}
 	a:hover {
-		color: #F2933C;
+		color: #141414;
+	}
+}
+.compatible {
+	.sub-menu__List {
+		background: #ffffff;
+		a:hover {
+			color: #F2933C;
+		}
 	}
 }
 body._pc .menu__list > li:hover .sub-menu__List {
@@ -255,6 +271,18 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 .header__bottom .header__bottom-body {
 	justify-content: flex-end;
 }
+.header__logo .logo_desc {
+	display: none;
+}
+.header__logo .logo_mob {
+	display: block;
+}
+.header__lang {
+    margin-right: 70px;
+}
+.contacts__phone img {
+	display: none;
+}
 /*-------- Mobile menu style ---------*/
 .mobile-menu {
 	display: block;
@@ -317,7 +345,7 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 .header__menu {
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: -100%;
 	width: 100%;
 	height: 100%;
 	padding: 30px;
@@ -326,6 +354,9 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 	border-radius: 0;
 	align-items: start;
 	overflow-y: auto;
+}
+.header__menu._active {
+	left: 0;
 }
 .menu__list {
     flex-direction: column;
@@ -346,6 +377,9 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 	width: 20px;
 	height: 20px;
 }
+.menu__link li a:focus {
+	text-decoration: none;
+}
 .menu__arrow-desc {
 	display: none;
 }
@@ -365,6 +399,7 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 	box-shadow: none;
 	margin-top: 0;
 	display: none;
+	
 	li {
 		font-size: 18px;
 		a {
@@ -374,6 +409,9 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 }
 .menu__list > li._active .sub-menu__List {
 	display: block;
+}
+.compatible .sub-menu__List {
+    background: transparent;
 }
 
 

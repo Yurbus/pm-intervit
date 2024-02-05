@@ -57,6 +57,17 @@ if (isMobile.any()) {
     document.body.classList.add('_pc');
 }
 
+//-------------------------------------------------------------------------------------------------
+// Меню бурнер
+const iconMenu = document.querySelector('.mobile-menu');
+const menuBody = document.querySelector('.header__menu');
+if (iconMenu) {
+	iconMenu.addEventListener("click", function (e) {
+		document.body.classList.toggle('_lock');
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+}
 
 //-------------------------------------------------------------------------------------------------
 // открыть под меню
@@ -74,18 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // AOS.init({
 //     duration: 1200,
 // })
-
-//-------------------------------------------------------------------------------------------------
-// Меню бурнер
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.header__menu');
-if (iconMenu) {
-	iconMenu.addEventListener("click", function (e) {
-		document.body.classList.toggle('_lock');
-		iconMenu.classList.toggle('_active');
-		menuBody.classList.toggle('_active');
-	});
-}
 
 //-------------------------------------------------------------------------------------------------
 // добавить класс при скроле страницы
