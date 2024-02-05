@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <title>Intervit PM</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+
+                    <div class="header__top">
+                        <div class="header__logo">
+                            <a href="index.html" >
+                                <img src="img/logo-intervit-pm.svg" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="header_contacts">
+                            <div class="contacts__item contacts__address">
+                                <img src="img/akar-icons_location.svg" alt="icon">
+                                <span>Україна, Київ, вул. Кржижановського, 3</span>
+                            </div>
+                            <div class="contacts__item contacts__phone">
+                                <img src="img/lucide_phone.svg" alt="icon">  
+                                <span><a href="tel:+380687001144">+380 68 700 11 44</a></span>  
+                            </div>
+                            <div class="contacts__item contacts__mail">
+                                <img src="img/mingcute_mail-line.svg" alt="icon">
+                                <span><a href="mailto:pm@intervit.group">pm@intervit.group</a></span>
+                            </div>
+                        </div>
+                        <div class="header__lang">
+                            <div class="lang__list">
+                                <li><a class="lang__link _active" href="">Ua</a></li>
+                                <li><a class="lang__link" href="">En</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__bottom">
+                        <!-- burger menu -->
+                        <div class="mobile-menu">
+                            <span></span>
+                        </div>
+                        <!-- nav menu -->
+                        <nav class="header__menu">
+                            <ul class="menu__list">
+                                <li class="menu__link carrent-menu__link">Продукція<img class="arrow__list" src="img/arrow_menu-white.svg" alt="arrow">
+                                    <ul class="sub-menu__List">
+                                        <li class="sub-menu__link"><a href="#">Ножі & Леза</a></li>
+                                        <li class="sub-menu__link"><a href="#">Підвісний конвеєр</a></li>
+                                        <li class="sub-menu__link"><a href="#">Ощипка пера</a></li>
+                                        <li class="sub-menu__link"><a href="#">Перевішувач</a></li>
+                                        <li class="sub-menu__link"><a href="#">Видалення клоаки</a></li>
+                                        <li class="sub-menu__link"><a href="#">Машина розтину</a></li>
+                                        <li class="sub-menu__link"><a href="#">Потрошитель</a></li>
+                                        <li class="sub-menu__link"><a href="#">Обробка шлунків</a></li>
+                                        <li class="sub-menu__link"><a href="#">Видалення зобу</a></li>
+                                        <li class="sub-menu__link"><a href="#">Видалення шиї</a></li>
+                                        <li class="sub-menu__link"><a href="#">Різні машини</a></li>
+                                        <li class="sub-menu__link"><a href="#">Лінія різки</a></li>
+                                        <li class="sub-menu__link"><a href="#">Обвалка</a></li>
+                                        <li class="sub-menu__link"><a href="#">Пакування</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__link"><a class="menu__link" href="">Головна</a></li>
+                                <li class="menu__link carrent-menu__link">Сумісно з<img class="arrow__list" src="img/arrow_menu.svg" alt="arrow">
+                                    <ul class="sub-menu__List">
+                                        <li class="sub-menu__link"><a href="#">Meyn</a></li>
+                                        <li class="sub-menu__link"><a href="#">Stork</a></li>
+                                        <li class="sub-menu__link"><a href="#">Linko</a></li>
+                                        <li class="sub-menu__link"><a href="#">Foodmate</a></li>
+                                        <li class="sub-menu__link"><a href="#">Poli-Clip</a></li>
+                                        <li class="sub-menu__link"><a href="#">Tipper tie</a></li>
+                
+                                    </ul>
+                                </li>
+                                <li class="menu__link"><a class="menu__link" href="">Про нас</a></li> 
+                                <li class="menu__link"><a class="menu__link" href="">Контакти</a></li>             
+                            </ul>
+                        </nav>
+                        <div class="header-search">
+                            <div class="search-form__container">
+								<input placeholder="Пошук по каталогу" class="search-form__input" type="search" name="s" title="Search" value="">
+                                <input type="hidden" name="lang" value="uk">
+                                <button class="search-form__submit" type="submit" title="Search" aria-label="Search">
+									<i aria-hidden="true" class="fa-search"></i>							
+                                    <span class="screen-only">Search</span>
+								</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="page">
+            <section class="main__section">
+    
+            </section>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+    <div id="popup" class="popup"><!-- Popup -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
+                <form action="" id="form" method="POST" class="form__body">
+                    <h4 class="form__title">Залиште свої дані і ми зв’яжемося с вами найближчим часом</h4>
+                    <div class="form__wrapper">
+                        <div class="form__group">
+                            <div class="form__item">
+                                <input type="text" name="name" class="form__input" placeholder="Ім’я:*">
+                            </div>
+                            <div class="form__item">
+                                <input type="tel" name="phone" class="form__input" placeholder="Телефон:*">
+                            </div>
+                            <div class="form__item">
+                                <input type="email" name="phone" class="form__input" placeholder="Email:">
+                            </div>
+                            <div class="form__item">
+                                <textarea name="message" id="" cols="30" rows="6" placeholder="Задати питання:"></textarea>
+                            </div>
+                            <div class="policy__check">
+                                <input type="checkbox" id="policy_index" name="policy" value="policy" />
+                                <label for="policy_index">Я погоджуюсь з правилами<a href="#" target="_blank">політики конфіденційності</a></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit">Відправити</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- End popup -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/popups.js"></script>
+
+</body>
+</html>

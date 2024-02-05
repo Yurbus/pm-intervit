@@ -1,0 +1,9 @@
+
+@font-face {
+	font-family: 'Lastica';
+	src: url('../fonts/Lastica.otf');
+	src: url('../fonts/Lastica.ttf') format('truetype');
+	font-weight: medium;
+	font-style: normal;
+}
+
