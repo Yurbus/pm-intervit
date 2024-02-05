@@ -45,20 +45,21 @@
                                 <li><a class="lang__link" href="">En</a></li>
                             </div>
                         </div>
+                        <!-- burger menu -->
+                        <div class="mobile-menu">
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="header__bottom">
                 <div class="header__container">
                     <div class="header__bottom-body">
-                    <!-- burger menu -->
-                    <div class="mobile-menu">
-                        <span></span>
-                    </div>
                     <!-- nav menu -->
                     <nav class="header__menu">
                         <ul class="menu__list">
-                            <li class="menu__link menu__link-product carrent-menu__link">Продукція<img class="arrow__list" src="img/arrow_menu-white.svg" alt="arrow">
+                            <a class="close__menu" href=""><img src="img/close.svg" alt=""></a>
+                            <li class="menu__link menu__link-product carrent-menu__link"><a href="">Продукція</a><img class="menu__arrow" src="img/arrow_menu-white.svg" alt="arrow">
                                 <ul class="sub-menu__List">
                                     <li class="sub-menu__link"><a href="#">Ножі & Леза</a></li>
                                     <li class="sub-menu__link"><a href="#">Підвісний конвеєр</a></li>
@@ -76,8 +77,11 @@
                                     <li class="sub-menu__link"><a href="#">Пакування</a></li>
                                 </ul>
                             </li>
-                            <li class="menu__link"><a class="menu__link" href="">Головна</a></li>
-                            <li class="menu__link compatible carrent-menu__link">Сумісно з<img class="arrow__list" src="img/arrow_menu.svg" alt="arrow">
+                            <li class="menu__link"><a href="">Головна</a></li>
+                            <li class="menu__link compatible carrent-menu__link">
+                                <a href="">Сумісно з</a>
+                                <img class="menu__arrow menu__arrow-desc" src="img/arrow_menu.svg" alt="arrow">
+                                <img class="menu__arrow-mob" src="img/arrow_menu-white.svg" alt="arrow">
                                 <ul class="sub-menu__List">
                                     <li class="sub-menu__link"><a href="#">Meyn</a></li>
                                     <li class="sub-menu__link"><a href="#">Stork</a></li>
@@ -88,8 +92,8 @@
             
                                 </ul>
                             </li>
-                            <li class="menu__link"><a class="menu__link" href="">Про нас</a></li> 
-                            <li class="menu__link"><a class="menu__link" href="">Контакти</a></li>             
+                            <li class="menu__link"><a href="">Про нас</a></li> 
+                            <li class="menu__link"><a href="">Контакти</a></li>             
                         </ul>
                     </nav>
                     <div class="header-search">
@@ -149,7 +153,16 @@
         </div>
     </div><!-- End popup -->
 
-
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("headerMenu");
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+        </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
