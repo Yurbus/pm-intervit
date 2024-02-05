@@ -73,6 +73,10 @@
 		}
 	}
 }
+.lang_active {
+	color: #F2933C;
+	font-weight: 600;
+}
 
 .header__bottom {
 	background: #F3F4F6;
@@ -336,7 +340,7 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 	}
 	&._active::after {
 		top: 50%;
-		left: 3px;
+		left: 2px;
 		width: 24px;
 		transform: rotate(45deg) translate(0px, -50%);
 	}
