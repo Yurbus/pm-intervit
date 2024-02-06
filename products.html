@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/popups.css">
     <link rel="stylesheet" href="css/fonts.css">
 
@@ -59,7 +59,7 @@
                     <!-- nav menu -->
                     <nav class="header__menu">
                         <ul class="menu__list">
-                            <li class="menu__link menu__link-product carrent-menu__link"><a href="products.html">Продукція</a><img class="menu__arrow" src="img/arrow_menu-white.svg" alt="arrow">
+                            <li class="menu__link menu__link-product carrent-menu__link"><a href="">Продукція</a><img class="menu__arrow" src="img/arrow_menu-white.svg" alt="arrow">
                                 <ul class="sub-menu__List">
                                     <li class="sub-menu__link"><a href="#">Ножі & Леза</a></li>
                                     <li class="sub-menu__link"><a href="#">Підвісний конвеєр</a></li>
@@ -77,21 +77,7 @@
                                     <li class="sub-menu__link"><a href="#">Пакування</a></li>
                                 </ul>
                             </li>
-                            <li class="menu__link"><a href="">Головна</a></li>
-                            <!-- <li class="menu__link compatible carrent-menu__link">
-                                <a href="">Сумісно з</a>
-                                <img class="menu__arrow menu__arrow-desc" src="img/arrow_menu.svg" alt="arrow">
-                                <img class="menu__arrow-mob" src="img/arrow_menu-white.svg" alt="arrow">
-                                <ul class="sub-menu__List">
-                                    <li class="sub-menu__link"><a href="#">Meyn</a></li>
-                                    <li class="sub-menu__link"><a href="#">Stork</a></li>
-                                    <li class="sub-menu__link"><a href="#">Linko</a></li>
-                                    <li class="sub-menu__link"><a href="#">Foodmate</a></li>
-                                    <li class="sub-menu__link"><a href="#">Poli-Clip</a></li>
-                                    <li class="sub-menu__link"><a href="#">Tipper tie</a></li>
-            
-                                </ul>
-                            </li> -->
+                            <li class="menu__link"><a href="products.html">Головна</a></li>
                             <li class="menu__link"><a href="">Про нас</a></li> 
                             <li class="menu__link"><a href="">Контакти</a></li>             
                         </ul>
@@ -109,23 +95,129 @@
                 </div>
             </div>
         </header>
-
+        <!------------------------------ Продукція --------------------------------->
         <main class="page">
-            <section class="main__section">
-                <div class="main__container">
-                    <div class="main__body">
-                        <h1 class="main__title">Виготовлення запчастин та комплектуючих</h1>
-                        <ul class="main__list">
-                            <li>Лінії птахопереробки Meyn, Stork</li>
-                            <li>Обладнання для пакування Poly-Clip, Moba</li>
-                            <li>Прес-обвальників POSS і т.д.</li>
+            <section class="prod__section">
+                <div class="prod__container">
+                    <div class="prod__body">
+                        <h1 class="prod__title">Продукція</h1>
+                    </div>
+                </div>
+            </section>
+            <!------------------------------ Breadcrumb --------------------------------->
+            <section class="breadcrumb__section" >
+                <div class="prod__container">
+                    <nav aria-label="Breadcrumb" class="breadcrumb">
+                        <ul class="breadcrumb__list">
+                            <li><a href="#"><img src="img/ion_home.svg" alt="home"></a></li>
+                            <li><img src="img/breadcrumb_arrow.svg" alt=""></li>
+                            <li><a href="#">Продукція </a></li>
+                            <li><img src="img/breadcrumb_arrow.svg" alt=""></li>
+                            <li><span aria-current="page">Видалення Зобу</span></li>
                         </ul>
-                        <div class="main__btn">
-                            <a class="main__btn-list" href="products.html">Продукція</a>
+                    </nav>
+                </div>
+            </section>
+            <!------------------------------Карточки товара --------------------------------->
+            <section class="shop__section" >
+                <div class="shop__container">
+                    <div class="shop__body">
+                        <aside id="secondary" class="widget-sidebar" role="complementary">
+                            <div id="product_categories" class="widget widget_product_categories">
+                                <h3 class="widget-title">Сумісно з</h3>
+                                <ul class="product-categories">
+                                    <li class="cat-item cat-parent"><a href="">Meyn</a></li>
+                                    <li class="cat-item "><a href="">Stork</a></li>
+                                    <li class="cat-item "><a href="">Linko</a></li>
+                                    <li class="cat-item "><a href="">Foodmate</a></li>
+                                    <li class="cat-item "><a href="">Poli-Clip</a></li>
+                                    <li class="cat-item "><a href="">Tipper tie</a></li>
+                                </ul>
+                            </div>
+                            <div id="product_categories" class="widget widget_product_categories">
+                                <h3 class="widget-title">Процеси</h3>
+                                <ul class="product-categories">
+                                    <li class="cat-item cat-parent"><a href=""></a></li>
+                                    <li class="cat-item "><a href="">Видалення зобу</a></li>
+                                    <li class="cat-item "><a href="">Видалення клоаки</a></li>
+                                    <li class="cat-item "><a href="">Видалення шиї</a></li>
+                                    <li class="cat-item "><a href="">Ножі & Леза</a></li>
+                                    <li class="cat-item "><a href="">Обвалка</a></li>
+                                    <li class="cat-item "><a href="">Обробка шлунків</a></li>
+                                    <li class="cat-item "><a href="">Пакування</a></li>
+                                    <li class="cat-item "><a href="">Перевішувач</a></li>
+                                    <li class="cat-item "><a href="">Потрошитель</a></li>
+                                    <li class="cat-item "><a href="">Різні машини</a></li>
+                                </ul>
+                            </div>
+                            <div id="product_categories" class="widget widget_product_categories">
+                                <h3 class="widget-title">Сумісно з</h3>
+                                <ul class="product-categories">
+                                    <li class="cat-item cat-parent"><a href="">CD6000/8000</a></li>
+                                    <li class="cat-item "><a href="">D40</a></li>
+                                    <li class="cat-item "><a href="">EZ-4500 / EZ-4525</a></li>
+                                    <li class="cat-item "><a href="">HS Lineweigher</a></li>
+                                    <li class="cat-item "><a href="">Leg processor</a></li>
+                                    <li class="cat-item "><a href="">Maestro</a></li>
+                                    <li class="cat-item "><a href="">Rapid</a></li>
+                                    <li class="cat-item "><a href="">Shackle guidance</a></li>
+                                    <li class="cat-item "><a href="">WLD</a></li>
+                                </ul>
+                            </div>
+                    
+                        </aside>
+                        <div class="product__grid">
+                            <div class="product__cards">
+                                <ul class="products__list">
+                                    <li class="product type-product">
+                                        <a href="" class="loop-product__link">
+                                            <img src="img/product_1.png" class="attachment_thumbnail" alt="">
+                                            <p class="articul">IRH.101.38</p>
+                                            <h2 class="product__title">Ніж вирізання клоаки Ф29 RH</h2>	
+                                            <span class="oem_number">OEM Новий: <span class="oem">0014.2377</span>
+                                        </a>
+                                    </li>
+                                    <li class="product type-product">
+                                        <a href="" class="loop-product__link">
+                                            <img src="img/product_1.png" class="attachment_thumbnail" alt="">
+                                            <p class="articul">IRH.101.38</p>
+                                            <h2 class="product__title">Ніж вирізання клоаки Ф29 RH</h2>	
+                                            <span class="oem_number">OEM Новий: <span class="oem">0014.2377</span>
+                                        </a>
+                                    </li>
+                                    <li class="product type-product">
+                                        <a href="" class="loop-product__link">
+                                            <img src="img/product_1.png" class="attachment_thumbnail" alt="">
+                                            <p class="articul">IRH.101.38</p>
+                                            <h2 class="product__title">Ніж вирізання клоаки Ф29 RH</h2>	
+                                            <span class="oem_number">OEM Новий: <span class="oem">0014.2377</span>
+                                        </a>
+                                    </li>
+                                    <li class="product type-product">
+                                        <a href="" class="loop-product__link">
+                                            <img src="img/product_1.png" class="attachment_thumbnail" alt="">
+                                            <p class="articul">IRH.101.38</p>
+                                            <h2 class="product__title">Ніж вирізання клоаки Ф29 RH</h2>	
+                                            <span class="oem_number">OEM Новий: <span class="oem">0014.2377</span>
+                                        </a>
+                                    </li>
+                                    <li class="product type-product">
+                                        <a href="" class="loop-product__link">
+                                            <img src="img/product_1.png" class="attachment_thumbnail" alt="">
+                                            <p class="articul">IRH.101.38</p>
+                                            <h2 class="product__title">Ніж вирізання клоаки Ф29 RH</h2>	
+                                            <span class="oem_number">OEM Новий: <span class="oem">0014.2377</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+
+
         </main>
 
         <footer class="footer">
