@@ -56,10 +56,6 @@
 	.contacts__address {
 		max-width: 215px;
 	}
-	.contacts__phone {
-	}
-	.contacts__mail {
-	}
 }
 .header__lang {
 	display: flex;
@@ -90,6 +86,14 @@
 		justify-content: space-between;
 		position: relative;
 	}
+}
+.height {
+	height: 66px;
+}
+.head_hide {
+	// visibility: hidden;
+	// opacity: 0;
+	margin-top: -100%;
 }
 /*---------- Меню -----------------*/
 .close__menu {
@@ -547,8 +551,14 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 	.main__body {
 		padding-top: 210px;
 	}
-
-
+	.search-form__container {
+		.search-form__input {
+			padding: 6px;
+		} 
+		.search-form__submit {
+			margin-top: 4px;
+		}
+	}
 
 
 	.footer__body {

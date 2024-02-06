@@ -60,6 +60,7 @@
 .header_contacts .contacts__address {
   max-width: 215px;
 }
+
 .header__lang {
   display: flex;
   align-items: center;
@@ -87,6 +88,14 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+}
+
+.height {
+  height: 66px;
+}
+
+.head_hide {
+  margin-top: -100%;
 }
 
 /*---------- Меню -----------------*/
@@ -528,6 +537,12 @@ body._touch .menu__list > li._active .menu__arrow-mob {
   }
   .main__body {
     padding-top: 210px;
+  }
+  .search-form__container .search-form__input {
+    padding: 6px;
+  }
+  .search-form__container .search-form__submit {
+    margin-top: 4px;
   }
   .footer__body {
     justify-content: flex-start;

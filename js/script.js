@@ -119,11 +119,11 @@ if (iconMenu) {
 // добавить класс при скроле страницы
 // let scrollpos = window.scrollY
 
-// const header = document.querySelector("header")
-// const scrollChange = 1
+// const header = document.querySelector("header__bottom")
+// const scrollChange = 10
 
-// const add_class_on_scroll = () => header.classList.add("bg-head")
-// const remove_class_on_scroll = () => header.classList.remove("bg-head")
+// const add_class_on_scroll = () => header.classList.add("head_hide")
+// const remove_class_on_scroll = () => header.classList.remove("head_hide")
 
 // window.addEventListener('scroll', function() { 
 //     scrollpos = window.scrollY;
@@ -136,6 +136,31 @@ if (iconMenu) {
 //     }
 
 // })
+
+//-------------------------------------------------------------------------------------------------
+// добавить класс при скроле страницы jquery
+var header = $(".header__bottom");
+var scrollChange = 1;
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= scrollChange) {
+        header.addClass('head_hide');
+    } else {
+        header.removeClass("head_hide");
+    }
+});
+var header_h = $(".header");
+var scrollChange = 1;
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= scrollChange) {
+        header_h.addClass('height');
+    } else {
+        header_h.removeClass("height");
+    }
+});
 
 //-------------------------------------------------------------------------------------------------
 // Маска на телефон 
