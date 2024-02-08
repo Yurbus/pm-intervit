@@ -303,6 +303,78 @@ body._touch .menu__list > li._active .menu__arrow-mob {
   background: linear-gradient(180deg, #fcae65 0%, #e08b3b 100%);
 }
 
+/*------------ advantages style ---------------------------------------------------------------*/
+.advantages__section {
+  background: #F3F4F6;
+}
+
+.advantages__body {
+  padding: 65px 0;
+}
+
+.advantages__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.item__advantages {
+  display: flex;
+  align-items: center;
+  max-width: 260px;
+}
+.item__advantages img {
+  max-width: 64px;
+  margin-right: 15px;
+}
+.item__advantages span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/*------------ Why do they choose style ---------------------------------------------------------------*/
+.whyMe__section {
+  padding: 120px 0;
+}
+
+.whyMe__title {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 42px;
+}
+
+.whyMe__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.item__whyMe {
+  background: #F4F4F4;
+  border-radius: 15px;
+  padding: 25px;
+}
+.item__whyMe .whyMe__count {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: flex-end;
+}
+.item__whyMe .whyMe__count img {
+  max-width: 139px;
+  margin-right: 10px;
+}
+.item__whyMe .whyMe__count span {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.item__whyMe p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  line-height: 1.4;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*------------------ Footer style --------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -366,6 +438,12 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 @media screen and (max-width: 1100.98px) {
   .header_contacts .contacts__item {
     margin-right: 15px;
+  }
+}
+/*=================================== width:992.98px ================================================================*/
+@media screen and (max-width: 992.98px) {
+  .item__advantages {
+    flex-wrap: wrap;
   }
 }
 /*=================================== width:960.98px ================================================================*/
@@ -523,11 +601,37 @@ body._touch .menu__list > li._active .menu__arrow-mob {
   .header_contacts .contacts__mail {
     display: none;
   }
+  .whyMe__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .item__whyMe .whyMe__count span {
+    font-size: 26px;
+  }
+  .item__whyMe p {
+    font-size: 13px;
+  }
 }
 /*=================================== width:768.98px ================================================================*/
 @media screen and (max-width: 768.98px) {
   .main__body {
     padding-top: 33%;
+  }
+  .advantages__body {
+    padding: 35px 0;
+  }
+  .advantages__body .advantages__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advantages__body .advantages__items .item__advantages {
+    justify-content: center;
+  }
+  .advantages__body .advantages__items .item__advantages img {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .advantages__body .advantages__items .item__advantages span {
+    text-align: center;
   }
 }
 /*=================================== width:549.98px ================================================================*/
