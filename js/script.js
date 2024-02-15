@@ -136,7 +136,20 @@ const sidebar = document.querySelector("#secondary");
 }
 // Обработчик события изменения чекбоксов
 document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
-    checkbox.addEventListener('change', filterProducts);
+    checkbox.addEventListener('change', function() {
+        filterProducts();
+        // Получаем выбранные категории
+        var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        var selectedCategories = Array.from(checkedCheckboxes).map(function(checkbox) {
+            return checkbox.name;
+        });
+
+        // Прокручиваем до первого отображаемого товара
+        var firstVisibleProduct = document.querySelector('.product[type="product"]:not([style="display: none;"])');
+        if (firstVisibleProduct) {
+            firstVisibleProduct.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
 });
 
 
