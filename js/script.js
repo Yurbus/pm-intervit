@@ -107,6 +107,78 @@ const sidebar = document.querySelector("#secondary");
         sidebar.classList.toggle("show");
     });
 
+//-------------------------------------------------------------------------------------------------
+// Фильтрация товара
+   function filterProducts() {
+    // Получаем выбранные чекбоксы
+    var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    var selectedCategories = Array.from(checkedCheckboxes).map(function(checkbox) {
+        return checkbox.name;
+    });
+    
+    // Показываем все товары
+    var products = document.querySelectorAll('#product-list .product');
+    products.forEach(function(product) {
+        product.style.display = 'block';
+    });
+
+    // Если есть выбранные категории, скрываем неподходящие товары
+    if (selectedCategories.length > 0) {
+        products.forEach(function(product) {
+            var categories = product.getAttribute('data-categories').split(' ');
+            if (!selectedCategories.every(function(category) {
+                    return categories.includes(category);
+                })) {
+                product.style.display = 'none';
+            }
+        });
+    }
+}
+// Обработчик события изменения чекбоксов
+document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+    checkbox.addEventListener('change', filterProducts);
+});
+
+
+
+//-------------------------------------------------------------------------------------------------
+// Показать еще товары
+    var productList = document.getElementById("productList");
+    var showMoreBtn = document.getElementById("showMoreBtn");
+    var products = productList.getElementsByClassName("product");
+
+    // Определите, сколько товаров показывать при каждом нажатии кнопки
+    var itemsToShow = 4;
+    var totalItems = products.length;
+    var visibleItems = 8;
+
+    // Скрыть все товары, начиная с восьмого
+    for (var i = visibleItems; i < totalItems; i++) {
+        products[i].style.display = "none";
+    }
+
+    showMoreBtn.addEventListener("click", function() {
+        for (var i = visibleItems; i < visibleItems + itemsToShow; i++) {
+        if (i < totalItems) {
+            products[i].style.display = "block";
+        }
+        }
+        visibleItems += itemsToShow;
+
+        // Скрыть кнопку, если показаны все товары
+        if (visibleItems >= totalItems) {
+        showMoreBtn.style.display = "none";
+        }
+    });
+
+    // Проверить, скрыть кнопку, если на странице нет товаров
+    if (totalItems <= visibleItems) {
+        showMoreBtn.style.display = "none";
+    }
+
+
+
+
 
 //-------------------------------------------------------------------------------------------------
 // Прокрутка при клике
