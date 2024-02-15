@@ -113,6 +113,17 @@
 	list-style: none;
 	position: relative;
 }
+
+.menu__link:not(:first-child) {
+	a {
+		transition: all 0.2s ease 0s;
+		&:hover {
+			text-decoration: underline;
+			color: #F2933C;		
+		}
+	}
+}
+
 .menu__link {
 	font-size: 14px;
 	font-weight: 500;
@@ -120,6 +131,7 @@
 	color: #141414;
 	padding: 18px 0;
 }
+
 .menu__arrow {
 	transition: transform 0.3s ease 0s; 
 }
@@ -550,8 +562,12 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 	width: 20px;
 	height: 20px;
 }
-.menu__link li a:focus {
-	text-decoration: none;
+.menu__list {
+	.menu__link {
+		a:hover {
+			text-decoration: underline;	
+		}
+	}
 }
 .menu__arrow-desc {
 	display: none;

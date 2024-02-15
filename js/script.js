@@ -70,6 +70,45 @@ if (iconMenu) {
 }
 
 //-------------------------------------------------------------------------------------------------
+// добавить класс при скроле страницы jquery
+var header = $(".header__bottom");
+var header_h = $(".header");
+var scrollChange = 1;
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var screenWidth = $(window).width(); // Получаем ширину экрана
+
+    // Проверяем, является ли экран мобильным
+    if (screenWidth <= 960) { // Примерное значение для мобильных устройств
+        if (scroll >= scrollChange) {
+            header.addClass('head_hide');
+            header_h.addClass('height');
+        } else {
+            header.removeClass("head_hide");
+            header_h.removeClass("height");
+        }
+    } else { // Для десктопа
+        if (scroll >= scrollChange) {
+            header.removeClass('head_hide');
+        } else {
+            header.removeClass("head_hide");
+        }
+    }
+});
+
+//-------------------------------------------------------------------------------------------------
+// Показать сайдбар
+const filterButton = document.querySelector(".filter__button");
+const sidebar = document.querySelector("#secondary");
+
+    filterButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        sidebar.classList.toggle("show");
+    });
+
+
+//-------------------------------------------------------------------------------------------------
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 // if(menuLinks.length > 0) {
@@ -137,30 +176,7 @@ if (iconMenu) {
 
 // })
 
-//-------------------------------------------------------------------------------------------------
-// добавить класс при скроле страницы jquery
-var header = $(".header__bottom");
-var scrollChange = 1;
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
 
-    if (scroll >= scrollChange) {
-        header.addClass('head_hide');
-    } else {
-        header.removeClass("head_hide");
-    }
-});
-var header_h = $(".header");
-var scrollChange = 1;
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= scrollChange) {
-        header_h.addClass('height');
-    } else {
-        header_h.removeClass("height");
-    }
-});
 
 //-------------------------------------------------------------------------------------------------
 // Маска на телефон 
