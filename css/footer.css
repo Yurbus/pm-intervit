@@ -1,0 +1,84 @@
+/*----------------------------------------------------------------------------------------*/
+/*------------------ Footer style --------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.footer {
+  background: #272A2C;
+  width: 100%;
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 70px 0 55px;
+}
+
+.footer_widget h3 {
+  color: #F2933C;
+  font-size: 20px;
+  margin-bottom: 17px;
+  font-weight: 500;
+}
+.footer_widget li {
+  margin: 12px 0 12px 6px;
+}
+.footer_widget li a {
+  color: #fff;
+}
+.footer_widget li a:hover {
+  color: #F2933C;
+}
+
+.footer__address .footer__address-list li img {
+  max-width: 14px;
+  margin-right: 10px;
+}
+
+.footer__copyright {
+  background: #F3F4F6;
+  padding: 22px 0;
+}
+.footer__copyright .copyright__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__copyright .copyright__body span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer__copyright .copyright__body a {
+  text-decoration: underline;
+}
+.footer__copyright .copyright__body a:hover {
+  color: #F2933C;
+}
+
+/*=================================== width:549.98px ================================================================*/
+@media screen and (max-width: 549.98px) {
+  .footer__copyright .copyright__body {
+    flex-direction: column;
+  }
+  .footer__copyright .copyright__body span {
+    margin: 5px 0;
+  }
+}
+/*=================================== width:479.98px ================================================================*/
+@media screen and (max-width: 479.98px) {
+  .footer__body {
+    justify-content: flex-start;
+  }
+  .footer__body .footer__logo {
+    width: 100%;
+  }
+  .footer__body .footer__logo a img {
+    max-width: 220px;
+  }
+  .footer__body .footer__nav {
+    width: 40%;
+  }
+  .footer__body .footer__prod {
+    width: 40%;
+  }
+}/*# sourceMappingURL=footer.css.map */
