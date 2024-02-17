@@ -57,6 +57,18 @@
   max-width: 32px;
   margin-right: 10px;
 }
+.header_contacts .contacts__phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header_contacts .contacts__phone span {
+  margin-bottom: 5px;
+}
+.header_contacts .contacts__phone span img {
+  width: 14px;
+}
 .header_contacts .contacts__address {
   max-width: 215px;
 }
@@ -436,5 +448,8 @@ body._touch .menu__list > li._active .menu__arrow-mob {
   }
   .search-form__container .search-form__submit {
     margin-top: 4px;
+  }
+  .height {
+    height: 70px;
   }
 }/*# sourceMappingURL=header.css.map */

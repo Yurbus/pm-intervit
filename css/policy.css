@@ -1,0 +1,38 @@
+.policy__body {
+  margin-top: 200px;
+}
+
+.policy__title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.policy__content {
+  margin-top: 40px;
+}
+.policy__content .content__body {
+  padding-bottom: 40px;
+}
+.policy__content .content__body h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.policy__content .content__body p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 140%;
+}
+.policy__content .content__body ul {
+  margin-left: 25px;
+}
+.policy__content .content__body ul li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+.policy__content .content__body a {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #F2933C;
+}/*# sourceMappingURL=policy.css.map */

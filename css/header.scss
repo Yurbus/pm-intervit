@@ -36,8 +36,6 @@
 }
 .header__logo {
 	max-width: 190px;
-	.logo_desc {
-	}
 	.logo_mob {
 		display: none;
 	}
@@ -51,6 +49,18 @@
 		img {
 			max-width: 32px;
 			margin-right: 10px;
+		}
+	}
+	.contacts__phone {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		span {
+			margin-bottom: 5px;
+			img {
+				width: 14px;
+			}
 		}
 	}
 	.contacts__address {
@@ -438,5 +448,8 @@ body._touch .menu__list > li._active .menu__arrow-mob {
 		.search-form__submit {
 			margin-top: 4px;
 		}
+	}
+	.height {
+		height: 70px;
 	}
 }
